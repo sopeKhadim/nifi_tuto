@@ -14,7 +14,8 @@ services:
       - SINGLE_USER_CREDENTIALS_USERNAME=nifiuser 
       - SINGLE_USER_CREDENTIALS_PASSWORD=nifipassword123 
     volumes:
-      - nifi_data:/opt/nifi/nifi-current/data
+      - /home/dmboup/nifi_tuto/input:/opt/nifi/input/
+      - /home/dmboup/nifi_tuto/output:/opt/nifi/output/
     networks:
       - nifi_network
 
