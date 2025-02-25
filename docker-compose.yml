@@ -16,6 +16,7 @@ services:
     volumes:
       - /home/dmboup/nifi_tuto/input:/opt/nifi/input/
       - /home/dmboup/nifi_tuto/output:/opt/nifi/output/
+      - /home/dmboup/nifi_tuto/mysql-connector:/opt/nifi/mysql-connector/
     networks:
       - nifi_network
 
